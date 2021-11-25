@@ -44,15 +44,18 @@ public class DatosDesordenados {
         return limiteSuperior;
     }
     
+    
+    public int[] getValores(){
+        return valores;
+    } 
+    
     public int[] getCopiaValores(){
         int [] copia = new int[size];
         System.arraycopy(valores, 0, copia, 0, size);
         return copia;
     }
     
-    public int[] getValores(){
-        return valores;
-    } 
+    
    
      public DatosOrdenados algoritmoSort(){
         
